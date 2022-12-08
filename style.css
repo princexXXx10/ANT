@@ -1,0 +1,230 @@
+:root {
+    --font-base: 'Poppins', sans-serif;
+    --font-alt: 'Open Sans', sans-serif;
+    
+    --color-primary: #6E01CE;
+    --color-black: #0C0C0C;
+    --color-gray: #545454;
+    --color-crimson: #F5EFDB;
+    --color-grey: #AAAAAA;
+    --color-white: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.heroSection__wrapper {
+    max-width: 1600px;
+    margin: auto;
+    font-family: var(--font-base);
+    height: 44rem;
+    background-image: url("images/Ant-AD-3\ 1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.heroSection__content {
+    max-width: 80%;
+    margin: auto;
+}
+.heroSection__nav {
+    padding-top: 30vh;
+}
+.heroSection__nav--links {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1.8rem;
+    list-style: none;
+}
+.heroSection__nav--active {
+    border-bottom: 2px solid var(--color-white);
+    font-weight: 600;
+}
+.heroSection__nav--links a {
+    text-transform: uppercase;
+    color: var(--color-primary);
+    text-decoration: none;
+    font-family: var(--font-base);
+}
+
+
+.heroSection__text {
+    text-align: left;
+}
+.heroSection__text--primary {
+    padding: 3.5rem 0 2.6rem;
+    font-size: 3rem;
+    color: var(--color-white);
+    font-weight: 700;
+}
+.heroSection__text--secondary {
+    font-size: 1rem;
+    color: var(--color-white);
+    line-height: 1.6;
+}
+
+.heroSection__button--COA button {
+    margin: 2.8rem 0;
+    padding: 1rem 2rem;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    text-transform: uppercase;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-size: .9rem;
+    font-weight: 900;
+}
+
+
+.heroSection__banner {
+    background-color: pink;
+    padding: 1.5rem 1rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    max-width: 62.5rem;
+    margin: auto;
+}
+.heroSection__banner--main h2 {
+    padding: 1rem 0 2rem;
+    text-align: center;
+    color: var(--color-primary);
+    font-size: 2rem;
+    font-weight: 900;
+}
+.heroSection__banner--category {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    max-width: 85%;
+    margin: auto;
+}
+.heroSection__banner--categoryItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.heroSection__banner--categoryItem div {
+    background-color: var(--color-primary);
+    padding: 1rem;
+    color: var(--color-white);
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+.heroSection__banner--interceptor {
+    width: 3px;
+    height: 6rem;
+    opacity: 0.5;
+    background-color: var(--color-black);
+}
+
+
+.host {
+    background-image: linear-gradient(#ADFFE1, #22003D);
+}
+
+.aboutSection__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+.aboutSection__main__image{
+    width: 60%;
+    background: none;
+    margin-left: -19%;
+}
+.aboutSection__main__text {
+    padding: 1rem 1.5rem;
+    border-radius: 0 1.3rem 1.3rem 0;
+    width: 40%;
+    background-color: var(--color-primary);
+    line-height: 1.4;
+    margin-left: -9%;
+}
+
+.aboutSection__main__text p {
+    padding: 1rem 0;
+    color: var(--color-white);
+}
+
+.aboutSection__main img {
+    width: 120%;
+}
+
+
+.bannerSection__wrapper {
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(27, 27, 27)),url("images/stylish-curly-haired-woman-wears-sunglasses-green-jumper-uses-smartphone-gets-message-poses-against-urban-setting-searches-location-via-mobile-phone-application-street-chats-with-followers\ 1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 25rem;
+}
+
+
+.bannerSection__content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.bannerSection__content h1 {
+    color: var(--color-white);
+    font-family: var(--font-base);
+    font-weight: 800;
+    font-size: 4.2rem;
+    padding: 3rem 0 2rem;
+}
+
+.bannerSection__content ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    text-transform: uppercase;
+    color: var(--color-white);
+    font-size: 1.5rem;
+}
+.bannerSection__content--active {
+    list-style: none;
+}
+
+.bannerSection__content button {
+    margin: 3rem 0;
+    padding: 1rem 2.6rem;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    text-transform: uppercase;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-size: .9rem;
+    font-weight: 900;
+}
+
+
+.featureSection__wrapper {
+    padding: 2rem 0;
+}
+
+.x {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2.6rem;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    text-transform: uppercase;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-size: .9rem;
+    font-weight: 900;
+}
