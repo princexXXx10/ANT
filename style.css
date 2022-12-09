@@ -4,9 +4,6 @@
     
     --color-primary: #6E01CE;
     --color-black: #0C0C0C;
-    --color-gray: #545454;
-    --color-crimson: #F5EFDB;
-    --color-grey: #AAAAAA;
     --color-white: #FFFFFF;
 }
 
@@ -22,7 +19,7 @@
     margin: auto;
     font-family: var(--font-base);
     height: 44rem;
-    background-image: url("images/Ant-AD-3\ 1.png");
+    background-image: url("images/BannerImage.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -163,7 +160,7 @@
 
 
 .bannerSection__wrapper {
-    background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(27, 27, 27)),url("images/stylish-curly-haired-woman-wears-sunglasses-green-jumper-uses-smartphone-gets-message-poses-against-urban-setting-searches-location-via-mobile-phone-application-street-chats-with-followers\ 1.png");
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(27, 27, 27)),url("images/Woman.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -172,7 +169,7 @@
 
 
 .bannerSection__content {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: auto;
 }
 
@@ -212,12 +209,19 @@
 
 .featureSection__wrapper {
     padding: 2rem 0;
+    max-width: 1100px;
+    margin: auto;
 }
 
 .x {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 3rem;
+    padding: 6rem 0;
+}
+
+.x button {
     padding: 1rem 2.6rem;
     background-color: var(--color-primary);
     color: var(--color-white);
@@ -228,3 +232,104 @@
     font-size: .9rem;
     font-weight: 900;
 }
+
+.featureSection__categories--primary,
+.featureSection__categories--secondary {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    color: var(--color-white);
+    padding: 2rem 0;
+}
+
+.featureSection__categories--interceptor {
+    width: 1.5px;
+    background-color: var(--color-white);
+    height: 12.5rem;
+    opacity: 0.5;
+}
+
+.c {
+    flex: 1;
+}
+
+.featureSection__categories--img {
+    margin: 1rem 0;
+    padding: 1rem 3rem;
+    width: 30%;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.paymentGateways__wrapper {
+    background-color: var(--color-white);
+    padding: 4rem 0;
+}
+.paymentGateways__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+.paymentGateways__content--interceptor {
+    width: 1.5px;
+    background-color: var(--color-black);
+    height: 7rem;
+    opacity: 0.5;
+}
+
+
+.newsletterSection__wrapper {
+    padding: 10rem 0 6rem;
+}
+.newsletterSection__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+fieldset {
+    border: 2px solid var(--color-white);
+    padding: 2rem 3rem;
+    color: var(--color-white);
+    width: 50%;
+}
+legend {
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: 800;
+}
+
+.newsletterSection__content h4 {
+    padding: 1rem 0 2rem;
+    text-align: center;
+}
+
+.newsletterSection__input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletterSection__input input {
+    padding: 1rem;
+    width: 55%;
+    outline: none;
+    border: none;
+}
+.newsletterSection__input button {
+    padding: 1rem 3rem;
+    border-radius: 0 .5rem .5rem 0;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    background-color: var(--color-primary);
+    font-weight: 700;
+    cursor: pointer;
+}
+
