@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
 :root {
     --font-base: 'Poppins', sans-serif;
     --font-alt: 'Open Sans', sans-serif;
@@ -14,11 +17,18 @@
     scroll-behavior: smooth;
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.mobileLogo,
+.mobileHamburger {
+    display: none;
+}
+
 .heroSection__wrapper {
     max-width: 1600px;
     margin: auto;
-    font-family: var(--font-base);
-    height: 44rem;
     background-image: url("images/BannerImage.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -29,7 +39,7 @@
     margin: auto;
 }
 .heroSection__nav {
-    padding-top: 30vh;
+    padding-top: 33vh;
 }
 .heroSection__nav--links {
     display: flex;
@@ -38,15 +48,17 @@
     gap: 1.8rem;
     list-style: none;
 }
-.heroSection__nav--active {
-    border-bottom: 2px solid var(--color-white);
-    font-weight: 600;
-}
 .heroSection__nav--links a {
     text-transform: uppercase;
     color: var(--color-primary);
     text-decoration: none;
     font-family: var(--font-base);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.heroSection__nav--links a:hover {
+    border-bottom: 2px solid var(--color-white);
+    font-weight: 600;
 }
 
 
@@ -54,7 +66,7 @@
     text-align: left;
 }
 .heroSection__text--primary {
-    padding: 3.5rem 0 2.6rem;
+    padding: 3.5rem 0 .7rem;
     font-size: 3rem;
     color: var(--color-white);
     font-weight: 700;
@@ -66,8 +78,8 @@
 }
 
 .heroSection__button--COA button {
-    margin: 2.8rem 0;
-    padding: 1rem 2rem;
+    margin: 2.5rem 0;
+    padding: 1.2rem 2rem;
     background-color: var(--color-primary);
     color: var(--color-white);
     text-transform: uppercase;
@@ -80,8 +92,8 @@
 
 
 .heroSection__banner {
-    background-color: pink;
-    padding: 1.5rem 1rem;
+    background-color: var(--color-white);
+    padding: 2rem 1rem;
     border-radius: 2rem;
     display: flex;
     justify-content: center;
@@ -89,7 +101,7 @@
     margin: auto;
 }
 .heroSection__banner--main h2 {
-    padding: 1rem 0 2rem;
+    padding: .7rem 0 1rem;
     text-align: center;
     color: var(--color-primary);
     font-size: 2rem;
@@ -110,10 +122,16 @@
 }
 .heroSection__banner--categoryItem div {
     background-color: var(--color-primary);
-    padding: 1rem;
+    padding: 1rem 1.5rem;
     color: var(--color-white);
     font-size: 1.3rem;
     font-weight: 900;
+    flex: 1;
+}
+.heroSection__banner--categoryItem p {
+    color: var(--color-black);
+    font-size: .8rem;
+    padding-bottom: 2.2rem;
 }
 .heroSection__banner--interceptor {
     width: 3px;
@@ -133,6 +151,7 @@
     align-items: center;
     max-width: 900px;
     margin: auto;
+    padding: 2rem 0;
 }
 
 .aboutSection__main__image{
@@ -164,30 +183,27 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 25rem;
 }
-
-
 .bannerSection__content {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: auto;
+    padding: 1.5rem 0;
 }
-
 .bannerSection__content h1 {
     color: var(--color-white);
     font-family: var(--font-base);
     font-weight: 800;
-    font-size: 4.2rem;
-    padding: 3rem 0 2rem;
+    font-size: 3.8rem;
+    padding: 2rem 0;
 }
-
 .bannerSection__content ul {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1.7rem;
     text-transform: uppercase;
     color: var(--color-white);
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 400;
 }
 .bannerSection__content--active {
     list-style: none;
@@ -333,3 +349,113 @@ legend {
     cursor: pointer;
 }
 
+
+.footerSection__content {
+    padding: 4rem 0;
+}
+.footerSection__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.footerSection__interceptor {
+    width: 1.5px;
+    background-color: var(--color-white);
+    height: 7rem;
+    opacity: 0.5;
+}
+.footerSection__content--one div, p {
+    padding: 1rem 0;
+    color: var(--color-white);
+}
+.footerSection__content--two span {
+    color: var(--color-primary);
+}
+.footerSection__content--three p {
+    font-size: 1.13rem;
+    color: var(--color-primary);
+}
+.footerSection__content--three div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.footerSection__content--three img {
+    width: 1.7rem;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+    .mobileLogo, .mobileHamburger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mobileHamburger {
+        justify-content: left;
+    }
+    .heroSection__nav {
+        padding-top: 3rem;
+    }
+    .heroSection__nav--links,
+    .heroSection__banner--interceptor {
+        display: none;
+    }
+    .heroSection__banner--category,
+    .heroSection__banner--categoryItem {
+        flex-direction: column;
+    }
+    .heroSection__banner--main h2 {
+        padding: .7rem 1rem 1.9rem;
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+    .heroSection__banner--categoryItem p {
+        text-align: center;
+        font-weight: 600;
+    }
+    .aboutSection__main {
+        flex-direction: column;
+    }
+    .aboutSection__main__image,
+    .aboutSection__main__text{
+        width: 100%;
+    }
+    .aboutSection__main__text p {
+        padding-left: 2rem;
+        font-size: .87rem;
+    }
+    .bannerSection__content {
+        padding: 1.5rem 2.5rem;
+    }
+    .bannerSection__content h1 {
+        font-size: 3rem;
+    }
+    .featureSection__categories--primary,
+    .featureSection__categories--secondary {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .featureSection__categories--interceptor,
+    .footerSection__interceptor {
+        display: none;
+    }
+    .footerSection__content {
+        flex-direction: column;
+    }
+}
