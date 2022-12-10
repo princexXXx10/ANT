@@ -6,6 +6,7 @@
     --font-alt: 'Open Sans', sans-serif;
     
     --color-primary: #6E01CE;
+    --color-secondary: #ADFFE1;
     --color-black: #0C0C0C;
     --color-white: #FFFFFF;
 }
@@ -19,12 +20,19 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #ADFFE1;
 }
 
-.mobileLogo,
+.mobileLogo img,
 .mobileHamburger,
-.mobile__paymentGateways {
+.mobile__paymentGateways,
+.mobile__heroSection__text {
     display: none;
+}
+
+.mobileLogo img {
+    padding-top: 2rem;
+    width: 7.5rem;
 }
 
 .heroSection__wrapper {
@@ -40,7 +48,7 @@ body {
     margin: auto;
 }
 .heroSection__nav {
-    padding-top: 33vh;
+    padding-top: 20%;
 }
 .heroSection__nav--links {
     display: flex;
@@ -79,7 +87,7 @@ body {
 }
 
 .heroSection__button--COA button {
-    margin: 2.5rem 0;
+    margin: 2.5rem 0 8rem;
     padding: 1.2rem 2rem;
     background-color: var(--color-primary);
     color: var(--color-white);
@@ -100,6 +108,7 @@ body {
     justify-content: center;
     max-width: 62.5rem;
     margin: auto;
+    margin-top: -50px;
 }
 .heroSection__banner--main h2 {
     padding: .7rem 0 1rem;
@@ -160,6 +169,10 @@ body {
     background: none;
     margin-left: -19%;
 }
+.aboutSection__main h1 {
+    color: var(--color-primary);
+
+}
 .aboutSection__main__text {
     padding: 1rem 1.5rem;
     border-radius: 0 1.3rem 1.3rem 0;
@@ -168,12 +181,10 @@ body {
     line-height: 1.4;
     margin-left: -9%;
 }
-
 .aboutSection__main__text p {
     padding: 1rem 0;
     color: var(--color-white);
 }
-
 .aboutSection__main img {
     width: 120%;
 }
@@ -234,8 +245,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
-    padding: 6rem 0;
+    gap: 2rem;
+    padding: 6rem 2rem;
 }
 
 .x button {
@@ -413,11 +424,17 @@ legend {
         justify-content: center;
         align-items: center;
     }
+    .mobileLogo img {
+        display: block;
+    }
     .mobileHamburger {
         justify-content: left;
     }
     .heroSection__nav {
         padding-top: 3rem;
+    }
+    .heroSection__banner {
+        border-radius: 0;
     }
     .heroSection__nav--links,
     .heroSection__banner--interceptor,
@@ -512,6 +529,9 @@ legend {
         border-radius: 0;
         width: 100%;
         margin-top: 2.4rem;
+    }
+    .x img {
+        width: 20px;
     }
     .footerSection__content {
         gap: 2.6rem;
